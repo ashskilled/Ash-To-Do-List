@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-do-list</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+         <div class="neons col-12">
+            <h1><em>To do List</em></h1>
+         </div>
+      </div>
+   </div>
+
+    <form action="/todo" method="POST">
+      <input type="text" placeholder="What" name="name" />
+      <input type="text" placeholder="When" name="when" />
+      <select name="priorities" id="itemPriority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+    <button class="glow-on-hover" type="button">SUBMIT</button>
+    </form>
+  </body>
+</html>
